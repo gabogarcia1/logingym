@@ -1,0 +1,261 @@
+/* *{
+    font-family: 'Noto Sans', sans-serif;
+} */
+
+.gimnasioLogo {
+    width: 45px;
+    height: 35px;
+}
+
+/* Estilos Seccion Productos */
+.card-img-miguel {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-img-top-miguel {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.estilosBorder {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(20, 33, 61, 1.00)
+}
+
+.imagenCarritoMiguel {
+    width: 150px;
+    object-fit: contain;
+}
+
+/* Estilos main */
+#carousel .carousel-inner img {
+    border-radius: 50px;
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+#carousel {
+    margin-bottom: 20px;
+}
+
+#productos-main {
+    margin-bottom: 20px;
+}
+
+#footer-main {
+    min-height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(20, 33, 61, 1);
+}
+
+#list-info-main {
+    padding-top: 20px;
+    color: white;
+    list-style-type: none;
+}
+
+.button-contacto-main {
+    padding-top: 50px;
+}
+
+.card-title{
+    min-height: 112px;
+}
+
+@media (min-width: 992px) {
+    .test {
+        min-width: 30%;
+    }
+}
+
+/*GABO */
+/* Contacto */
+.imagen1 {
+    max-height: 300px;
+    width: 100%;
+}
+.bodyContacto {
+    margin: 0%;
+    background-image: url(https://images.unsplash.com/photo-1544033527-b192daee1f5b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    min-height: 380px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+}
+.emailInput {
+    text-decoration: none;
+    border: solid 1px #707070;
+    border-radius: 10px;
+    color: white;
+    background: rgba(252, 163, 17, 1);
+    opacity: 0.6;
+}
+.emailInput:hover {
+    opacity: 1;
+}
+
+.registrarBoton {
+    text-decoration: none;
+    border: solid 1px #707070;
+    border-radius: 10px;
+    color: white;
+    background: rgba(252, 163, 17, 1);
+}
+
+.botonfacebook {
+    text-decoration: none;
+    border: solid 1px #707070;
+    border-radius: 10px;
+    color: #707070;
+}
+.botonfacebook:hover {
+    text-decoration: none;
+    color: white;
+    background: #4072fa;
+}
+.login {
+    margin: 20px;
+    padding: 16px;
+    right: 150px;
+}
+
+/* Seccion login */
+
+.bg-img {
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/4162449/pexels-photo-4162449.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+
+    /* Control the height of the image */
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Titulo login */
+@font-face {
+    font-family: "ubuntu";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Lato Light Italic"), local("Lato-LightItalic"),
+        url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2) format("woff2");
+}
+
+a {
+    text-decoration: none;
+    color: #9ca0b1;
+}
+
+.tituloLogin {
+    text-align: center;
+
+    color: #fff;
+    font-size: 92px;
+    font-family: "ubuntu";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(to right, #000000 10%, #ffffff 50%, rgba(252, 163, 17, 1) 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.bg-form {
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+}
+
+/* ============================= */
+/* device md-medio */
+/* ============================= */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .tituloLogin {
+        text-align: center;
+
+        color: #fff;
+        font-size: 70px;
+        font-family: "ubuntu";
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: "Josefin Sans", sans-serif;
+        background: linear-gradient(to right, #000000 10%, #ffffff 50%, rgba(252, 163, 17, 1) 60%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 1.5s linear infinite;
+        display: inline-block;
+    }
+}
+
+/* ================================================ */
+/* Media pequeno */
+/* ================================================ */
+@media all and (min-width: 322px) and (max-width: 767px) {
+    .tituloLogin {
+        text-align: center;
+
+        color: #fff;
+        font-size: 50px;
+        font-family: "ubuntu";
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: "Josefin Sans", sans-serif;
+        background: linear-gradient(to right, #000000 10%, #ffffff 50%, rgba(252, 163, 17, 1) 60%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 1.5s linear infinite;
+        display: inline-block;
+    }
+}

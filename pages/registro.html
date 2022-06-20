@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/logo/logo.png" type="image/x-icon">
+    <title>Nombre del Gym</title>
+</head>
+
+<body class="bg-img">
+    <!-- <header>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+            <div class="container">
+                <img src="../img/logo/logo.png" alt="Logo del Gimnasio" class="gimnasioLogo mr-2">
+                <a class="navbar-brand" href="../html/main.html">Nombre</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/main.html">Turnos <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/productos.html">Productos <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/contacto.html">Contacto <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+
+                        <a class="btn btn-info my-2 my-sm-0 mx-1" href="../html/login.html">Log In</a>
+                        <button class="btn btn-info my-2 my-sm-0 mx-1" type="submit"><i class="fa fa-shopping-cart pr-2"
+                                aria-hidden="true"></i>0</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
+
+    <main>
+        <h2 class="d-flex justify-content-center py-4 tituloLogin"> RITMO LATINO </h2>
+        <hr>
+        <section>
+            <div class="container bg-form">
+                <div>
+                    <h3 class="text-center text-dark">Registrate</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 ">
+                        <form id="btnSubmit" onsubmit="validarGeneral(event)">
+                           
+                            <div class=" my-3">
+                                <div class="form-group">
+                                    <label>Nombre y apellido </label>
+                                    <input
+                                    type="text"
+                                    maxlength="30"
+                                    class="form-control"
+                                    id="name"
+                                    autocomplete="off"
+                                    required
+                                  />
+                                            
+                                </div>
+                                <div class="form-group">
+                                    <label> Tu correo electronico</label>
+                                    <input type="email" class="form-control" id="email"
+                                        aria-describedby="emailHelp" onblur="validarMail(this)"/>
+                                        <div class="valid-feedback">
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Ingrese un email valido
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Contraseña</label>
+                                    <input type="password" class="form-control" id="password" onblur="validadPassword(this)"/>
+                                    <div class="valid-feedback">
+                                    </div>
+                                    <div class="invalid-feedback">
+                                       Tiene que ingresar una contraseña
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirmar contraseña</label>
+                                    <input type="password" class="form-control" id="password1" onblur="validadPasswordConfirm(this)"/>
+                                    <div class="valid-feedback">
+                                    </div>
+                                    <div class="invalid-feedback">
+                                       Tiene que ingresar una contraseña
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="registrarBoton w-100 px-2 py-1 my-2 d-block text-center">Registrarme</button>
+                                <div id="msjRegistro"></div>
+                        </form>
+                     
+                        <p class="text-center my-4"> ¿Ya estas registrado? <a href="login.html"
+                                class="red font-weight-bold">Inicia Sesion</a></p>
+                    </div>
+
+                </div>
+                <div class="container col-lg-6 col-md-6 py-4 ">
+                    <a href="#" class="botonfacebook py-5 my-2 d-block text-center mb-5" role="button"
+                        aria-pressed="true"><i class="fab fa-facebook"></i>
+                        Registrarse con Facebook</a>
+                    <a href="#" class="botonfacebook py-5 my-2 d-block text-center mb-5" role="button"
+                        aria-pressed="true"><i class="fab fa-google"></i>
+                        Registrarse con Google</a>
+                </div>
+               
+
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/b6f4b16237.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/823835b326.js"></script>
+
+
+    
+    <!-- EMAIL JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_o3QY1JwehbsYLsqDqLPou");
+})();
+</script>
+<script src="../js/registro.js"></script>
+</body>
+
+</html>
